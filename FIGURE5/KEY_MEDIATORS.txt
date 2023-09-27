@@ -1,0 +1,176 @@
+acaa1: negative
+acvrl1: positive
+adamts8: positive
+adgrg2: positive
+adh4: negative
+adm: positive
+angpt2: positive
+angptl4: positive
+apom: positive
+areg: positive
+arsa: negative
+b4gat1: positive
+bag3: positive
+bcan: positive
+bpifb1: positive
+brk1: positive
+c1qa: positive with mediated interaction and interaction referent
+ca12: positive
+ca4: positive
+calb1:positive
+cant1: positive
+cd276: positive
+cd302: positive
+cd6: negative
+cdhr2:negative
+ceacam5: positive
+chi3l1: positive
+ckap4: positive
+clec5a: positive
+cndp1: positive
+cntn5: positive
+col4a1:positive
+col6a3: positive
+cpvl: positive
+creg1:negative
+csf1: positive
+cst5: positive
+ctsd: positive
+cxcl17: negative with mediated interaction
+cxcl5: positive
+cxcl9: positive
+dll1: positive
+dpp4: positive
+dsc2: positive
+dsg2: negative
+eda2r: positive
+edar: positive
+edil3: positive
+egfr: positive
+enpp2: negative
+epha2: positive
+f9: negative
+fam3b: positive
+fam3c: positive
+fap: positive
+flt3lg: negative
+fstl3:positive
+furin:negative
+gcnt1: negative
+gdf15: positive
+gdnf: positive
+gfap: positive
+gfra1: positive
+glb1: negative
+gpc5: positive
+gsta1: negative
+gusb: negative
+gzma: negative
+havcr1: positive
+hpgds: positive
+hspb6: positive
+ifnlr1: negative
+igfbp2: positive
+igfbp3: positive
+igfbp4: positive
+il15: positive
+il17c: positive
+il19: positive
+il1rl1: positive
+il2ra: positive
+il32: positive
+il4r: positive
+il6: positive
+inhbc: negative
+ism1: negative
+itga11: positive
+itga5: negative
+itgav: positive
+itih3: positive
+kdr: positive
+klk4: positive
+krt18:negative
+krt19: positive
+kynu: negative
+lair1: positive
+layn: positive
+lgals4: positive
+lgmn: negative
+lrp11: positive
+lrnn1: positive
+ltbp2: positive
+ltbr: positive
+mansc1: positive
+mmp12: positive
+mmp3: positive
+mmp7: positive
+ncam1: negative
+nectin2: positive
+nectin4: positive
+nefl: positive
+nomo1: negative
+nos1: positive
+npdc1: positive
+nppb: positive
+nptxr: positive
+nrp1: positive
+ntprobnp: positive
+ogn: positive
+omg: positive
+pdgfc: positive
+pi3: positive
+pik3ip1: positive
+plat: negative
+plau: negative
+plaur: positive 
+prcp: negative
+prok1: positive
+ptgds: positive
+ptprf: positive
+ptprn2:negative
+rab6a: positive
+rarres2: negative
+reg1a: positive
+reg1b: positive
+reg3a: positive
+reg4: positive
+ren: positive
+robo1: negative
+robo2: negative
+rspo3: positive
+s100p: positive
+scarb2: positive
+scgb3a2: positive
+scly: negative
+serpina11: positive
+setmar: positive
+smoc1: positive with mediated interaction
+spink1: positive
+spink4: positive
+spock1: positive
+spon1: positive
+spp1: positive
+tcl1a: positive
+tcn2: positive
+tff1: positive
+tff2: positive
+tff3: positive
+tgfa: positive
+timp4: positive
+tnfrsf10a: positive
+tnfrsf11b: positive
+tnfrsf12a: positive
+tnfrsf19: positive
+tnfrsf1a: positive
+tnfrsf1b: positive
+tnfsf11: positive with mediated interaction
+tnfsf12: positive
+tnfsf13: positive
+umod: positive
+vsig4:positive
+vwa1: negative
+wfdc2: positive
+wnt9a: positive   
+  
+
+  
