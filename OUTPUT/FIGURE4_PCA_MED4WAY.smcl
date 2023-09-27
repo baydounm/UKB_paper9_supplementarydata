@@ -1,0 +1,430 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. 
+. use "E:\16GBBACKUPUSB\BACKUP_USB_SEPTEMBER2014\May Baydoun_folder\UK_BIOBANK_PROJECT\UKB_PAPER8B_PERIONDONTALDISEASE_OLINK_DEM\DATA\finaldata_unimputedfin",clear
+{txt}
+{com}. 
+. 
+. 
+. **************************************************PRINCIPAL COMPONENTS ANALYSIS OF TOP 18 PROTEINS WITH 0.15 EFFECT SIZE WITH SEVERE ORAL HEALTH PROBLEMS AND PASSED BONFERRONI CORRECTION, PLUS HAD A SIGNIFICANT TE and PIE AT TYPE I ERROR OF 0.05
+. 
+. **zgdf15 zil19 zmmp12 zacvrl1 
+. 
+. 
+. pca zgdf15 zil19 zmmp12 zacvrl1  if sample_final==1
+
+{txt}Principal components/correlation{col 50}Number of obs    = {res}    33,835
+{col 50}{txt}Number of comp.  = {res}         4
+{col 50}{txt}Trace            {col 67}=  {res}        4
+{col 5}{txt}Rotation: (unrotated = principal){col 50}Rho              = {res}    1.0000
+
+{txt}{col 5}{hline 13}{c TT}{hline 60}
+{col 5}   Component {c |}   Eigenvalue   Difference         Proportion   Cumulative
+{col 5}{hline 13}{c +}{hline 60}
+{col 5}{ralign 12:Comp1} {c |}{res}      2.05293      1.24254             0.5132       0.5132
+{txt}{col 5}{ralign 12:Comp2} {c |}{res}      .810386      .169446             0.2026       0.7158
+{txt}{col 5}{ralign 12:Comp3} {c |}{res}       .64094      .145192             0.1602       0.8761
+{txt}{col 5}{ralign 12:Comp4} {c |}{res}      .495748            .             0.1239       1.0000
+{txt}{col 5}{hline 13}{c BT}{hline 60}
+
+Principal components (eigenvectors) 
+
+{space 4}{hline 13}{c  TT}{hline 10}{hline 10}{hline 10}{hline 10}{c  TT}{hline 13}
+{space 4}{space 0}{ralign 12:Variable}{space 1}{c |}{space 1}{ralign 8:Comp1}{space 1}{space 1}{ralign 8:Comp2}{space 1}{space 1}{ralign 8:Comp3}{space 1}{space 1}{ralign 8:Comp4}{space 1}{c |}{space 1}{ralign 11:Unexplained}{space 1}
+{space 4}{hline 13}{c   +}{hline 10}{hline 10}{hline 10}{hline 10}{c   +}{hline 13}
+{space 4}{space 0}{ralign 12:zgdf15}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.5591}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.1979}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.1881}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.7828}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zil19}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.3944}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.9072}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.1455}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0174}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zmmp12}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.4972}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.3420}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.7536}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.2605}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zacvrl1}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.5335}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.1445}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.6128}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.5648}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{hline 13}{c  BT}{hline 10}{hline 10}{hline 10}{hline 10}{c  BT}{hline 13}
+
+{com}. rotate
+
+{txt}Principal components/correlation{col 50}Number of obs    = {res}    33,835
+{col 50}{txt}Number of comp.  = {res}         4
+{col 50}{txt}Trace            {col 67}=  {res}        4
+{col 5}{txt}Rotation: orthogonal varimax (Kaiser off){col 50}Rho              = {res}    1.0000
+
+{txt}{col 5}{hline 13}{c TT}{hline 60}
+{col 5}   Component {c |}     Variance   Difference         Proportion   Cumulative
+{col 5}{hline 13}{c +}{hline 60}
+{col 5}{ralign 12:Comp1} {c |}{res}            1  1.94342e-06             0.2500       0.2500
+{txt}{col 5}{ralign 12:Comp2} {c |}{res}            1  5.99670e-06             0.2500       0.5000
+{txt}{col 5}{ralign 12:Comp3} {c |}{res}      .999997  2.88685e-07             0.2500       0.7500
+{txt}{col 5}{ralign 12:Comp4} {c |}{res}      .999996            .             0.2500       1.0000
+{txt}{col 5}{hline 13}{c BT}{hline 60}
+
+Rotated components 
+
+{space 4}{hline 13}{c  TT}{hline 10}{hline 10}{hline 10}{hline 10}{c  TT}{hline 13}
+{space 4}{space 0}{ralign 12:Variable}{space 1}{c |}{space 1}{ralign 8:Comp1}{space 1}{space 1}{ralign 8:Comp2}{space 1}{space 1}{ralign 8:Comp3}{space 1}{space 1}{ralign 8:Comp4}{space 1}{c |}{space 1}{ralign 11:Unexplained}{space 1}
+{space 4}{hline 13}{c   +}{hline 10}{hline 10}{hline 10}{hline 10}{c   +}{hline 13}
+{space 4}{space 0}{ralign 12:zgdf15}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zil19}{space 1}{c |}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zmmp12}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{space 0}{ralign 12:zacvrl1}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{c |}{space 1}{center 11:{res:{sf:          0}}}{space 1}
+{space 4}{hline 13}{c  BT}{hline 10}{hline 10}{hline 10}{hline 10}{c  BT}{hline 13}
+
+Component rotation matrix
+
+{space 4}{hline 13}{c  TT}{hline 10}{hline 10}{hline 10}{hline 10}
+{space 4}{space 0}{ralign 12:}{space 1}{c |}{space 1}{ralign 8:Comp1}{space 1}{space 1}{ralign 8:Comp2}{space 1}{space 1}{ralign 8:Comp3}{space 1}{space 1}{ralign 8:Comp4}{space 1}
+{space 4}{hline 13}{c   +}{hline 10}{hline 10}{hline 10}{hline 10}
+{space 4}{space 0}{ralign 12:Comp1}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.5335}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.3944}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.4972}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.5591}}}{space 1}
+{space 4}{space 0}{ralign 12:Comp2}{space 1}{c |}{space 1}{ralign 8:{res:{sf: -0.1445}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.9072}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.3420}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.1979}}}{space 1}
+{space 4}{space 0}{ralign 12:Comp3}{space 1}{c |}{space 1}{ralign 8:{res:{sf: -0.6128}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.1455}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.7536}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.1881}}}{space 1}
+{space 4}{space 0}{ralign 12:Comp4}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.5648}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0174}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.2605}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.7828}}}{space 1}
+{space 4}{hline 13}{c  BT}{hline 10}{hline 10}{hline 10}{hline 10}
+
+{com}. 
+. 
+. capture drop mediator1 
+{txt}
+{com}. predict  mediator1 
+{txt}({bf:score} assumed)
+(3 components skipped)
+
+Scoring coefficients for orthogonal varimax rotation
+{col 5}sum of squares(column-loading) = 1
+
+{space 4}{hline 13}{c  TT}{hline 10}{hline 10}{hline 10}{hline 10}
+{space 4}{space 0}{ralign 12:Variable}{space 1}{c |}{space 1}{ralign 8:Comp1}{space 1}{space 1}{ralign 8:Comp2}{space 1}{space 1}{ralign 8:Comp3}{space 1}{space 1}{ralign 8:Comp4}{space 1}
+{space 4}{hline 13}{c   +}{hline 10}{hline 10}{hline 10}{hline 10}
+{space 4}{space 0}{ralign 12:zgdf15}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}
+{space 4}{space 0}{ralign 12:zil19}{space 1}{c |}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}
+{space 4}{space 0}{ralign 12:zmmp12}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}
+{space 4}{space 0}{ralign 12:zacvrl1}{space 1}{c |}{space 1}{ralign 8:{res:{sf:  1.0000}}}{space 1}{space 1}{ralign 8:{res:{sf:  0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}{space 1}{ralign 8:{res:{sf: -0.0000}}}{space 1}
+{space 4}{hline 13}{c  BT}{hline 10}{hline 10}{hline 10}{hline 10}
+
+{com}. 
+. 
+. save, replace
+{txt}{p 0 4 2}
+file {bf}
+E:\16GBBACKUPUSB\BACKUP_USB_SEPTEMBER2014\May Baydoun_folder\UK_BIOBANK_PROJECT\UKB_PAPER8B_PERIONDONTALDISEASE_OLINK_DEM\DATA\finaldata_unimputedfin.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. forval x=1(1)1 {c -(} 
+{txt}  2{com}. 
+. med4way poororalhealth_sev mediator`x' AGE SEX NonWhite householdsize SES LE8_TOTALSCORE if sample_final==1 , a0(0) a1(1) m(0) yreg(cox) mreg(linear) 
+{txt}  3{com}. 
+. med4way poororalhealth_sev mediator`x' AGE SEX NonWhite householdsize SES LE8_TOTALSCORE if sample_final==1 & SEX==1 , a0(0) a1(1) m(0) yreg(cox) mreg(linear) 
+{txt}  4{com}. 
+. med4way poororalhealth_sev mediator`x' AGE SEX NonWhite householdsize SES LE8_TOTALSCORE if sample_final==1 & SEX==2 , a0(0) a1(1) m(0) yreg(cox) mreg(linear) 
+{txt}  5{com}. 
+. {c )-}
+{res}{err}Warning: this analysis assumes a rare outcome.
+Warning: fixed values for the covariates AGE SEX NonWhite householdsize SES LE8_TOTALSCORE were not provided. All covariates are fixed at their respective mean.
+
+{txt}-> Summary
+
+{col 4}Outcome    (yvar):{col 24}{res}Age_dementia
+{col 4}{txt}Exposure   (avar):{col 24}{res}poororalhealth_sev
+{col 4}{txt}Mediator   (mvar):{col 24}{res}mediator1
+{col 4}{txt}Covariates (cvars):{col 24}{res}AGE SEX NonWhite householdsize SES LE8_TOTALSCORE
+
+{col 4}{txt}Model for the outcome  (yreg):{col 35}{res}cox
+{col 4}{txt}Model for the mediator (mreg):{col 35}{res}linear
+
+{col 4}{txt}Referent exposure level (a0):{col 46}{res}0
+{col 4}{txt}Actual exposure level   (a1):{col 46}{res}1
+{col 4}{txt}Mediator level for the decomposition (m):{col 46}{res}0
+{col 4}{txt}Fixed values of the covariates (c):{col 46}{res}60.68 1.532 .0464 2.217 -.03184 500.7
+
+
+{txt}-> Model for the outcome
+
+{col 10}Failure {bf:_d}: {res}dem_diag==1
+{col 4}{txt}Analysis time {bf:_t}: {res}Age_dementia
+{col 3}{txt}Enter on or after: {res}time AGE
+{col 9}{txt}ID variable: {res}n_eid
+
+{txt}Iteration 0:  Log likelihood = {res}-8443.5186
+{txt}Iteration 1:  Log likelihood = {res}-8394.1771
+{txt}Iteration 2:  Log likelihood = {res}-8393.4252
+{txt}Iteration 3:  Log likelihood = {res}-8393.4236
+{txt}Iteration 4:  Log likelihood = {res}-8393.4236
+{txt}Refining estimates:
+Iteration 0:  Log likelihood = {res}-8393.4236
+
+{txt}Cox regression with Breslow method for ties
+
+No. of subjects = {res}{ralign 11:33,835}{col 57}{txt}{lalign 13:Number of obs} = {res}{ralign 6:33,835}
+{txt}No. of failures = {res}{ralign 11:909}
+{txt}Time at risk    = {res}{ralign 11:411,146.234}
+{col 57}{txt}{lalign 13:LR chi2({res:9})} = {res}{ralign 6:100.19}
+{txt}Log likelihood = {res}-8393.4236{col 57}{txt}{lalign 13:Prob > chi2} = {res}{ralign 6:0.0000}
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                         _t{col 29}{c |} Haz. ratio{col 41}   Std. err.{col 53}      z{col 61}   P>|z|{col 69}     [95% con{col 82}f. interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}poororalhealth_sev {c |}{col 29}{res}{space 2} 1.179586{col 41}{space 2} .0897436{col 52}{space 1}    2.17{col 61}{space 3}0.030{col 69}{space 4} 1.016177{col 82}{space 3} 1.369271
+{txt}{space 18}mediator1 {c |}{col 29}{res}{space 2} 1.152152{col 41}{space 2} .0483731{col 52}{space 1}    3.37{col 61}{space 3}0.001{col 69}{space 4} 1.061139{col 82}{space 3} 1.250972
+{txt}_poororalhealXmediator1_000 {c |}{col 29}{res}{space 2}  .982027{col 41}{space 2} .0634318{col 52}{space 1}   -0.28{col 61}{space 3}0.779{col 69}{space 4} .8652508{col 82}{space 3} 1.114563
+{txt}{space 24}AGE {c |}{col 29}{res}{space 2} 1.033959{col 41}{space 2} .0136344{col 52}{space 1}    2.53{col 61}{space 3}0.011{col 69}{space 4} 1.007578{col 82}{space 3}  1.06103
+{txt}{space 24}SEX {c |}{col 29}{res}{space 2} .7743317{col 41}{space 2} .0523787{col 52}{space 1}   -3.78{col 61}{space 3}0.000{col 69}{space 4} .6781856{col 82}{space 3} .8841085
+{txt}{space 19}NonWhite {c |}{col 29}{res}{space 2} 1.053983{col 41}{space 2} .1896067{col 52}{space 1}    0.29{col 61}{space 3}0.770{col 69}{space 4} .7408091{col 82}{space 3} 1.499549
+{txt}{space 14}householdsize {c |}{col 29}{res}{space 2} .9307424{col 41}{space 2} .0410086{col 52}{space 1}   -1.63{col 61}{space 3}0.103{col 69}{space 4} .8537397{col 82}{space 3}  1.01469
+{txt}{space 24}SES {c |}{col 29}{res}{space 2} .8190064{col 41}{space 2} .0418844{col 52}{space 1}   -3.90{col 61}{space 3}0.000{col 69}{space 4} .7408946{col 82}{space 3} .9053534
+{txt}{space 13}LE8_TOTALSCORE {c |}{col 29}{res}{space 2} .9991923{col 41}{space 2} .0003742{col 52}{space 1}   -2.16{col 61}{space 3}0.031{col 69}{space 4} .9984592{col 82}{space 3}  .999926
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+
+-> Model for the mediator
+{res}
+{txt}Iteration 0:{space 2}Log likelihood = {res: -45604.29}  
+Iteration 1:{space 2}Log likelihood = {res: -45604.29}  
+{res}
+{txt}{col 1}Linear regression (Maximum Likelihood){col 56}{lalign 13:Number of obs}{col 69} = {res}{ralign 7:33,835}
+{txt}{col 56}{lalign 13:Wald chi2({res:7})}{col 69} = {res}{ralign 7:5168.85}
+{txt}{col 1}{lalign 14:Log likelihood}{col 15} = {res}{ralign 9:-45604.29}{txt}{col 56}{lalign 13:Prob > chi2}{col 69} = {res}{ralign 7:0.0000}
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         mediator1{col 20}{c |} Coefficient{col 32}  Std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}mu                 {txt}{c |}
+poororalhealth_sev {c |}{col 20}{res}{space 2} .1523048{col 32}{space 2} .0126075{col 43}{space 1}   12.08{col 52}{space 3}0.000{col 60}{space 4} .1275947{col 73}{space 3}  .177015
+{txt}{space 15}AGE {c |}{col 20}{res}{space 2} .0284563{col 32}{space 2} .0009797{col 43}{space 1}   29.04{col 52}{space 3}0.000{col 60}{space 4} .0265361{col 73}{space 3} .0303766
+{txt}{space 15}SEX {c |}{col 20}{res}{space 2} -.234238{col 32}{space 2} .0102383{col 43}{space 1}  -22.88{col 52}{space 3}0.000{col 60}{space 4}-.2543047{col 73}{space 3}-.2141713
+{txt}{space 10}NonWhite {c |}{col 20}{res}{space 2}-.1256392{col 32}{space 2} .0245586{col 43}{space 1}   -5.12{col 52}{space 3}0.000{col 60}{space 4}-.1737731{col 73}{space 3}-.0775053
+{txt}{space 5}householdsize {c |}{col 20}{res}{space 2}-.0152839{col 32}{space 2} .0048081{col 43}{space 1}   -3.18{col 52}{space 3}0.001{col 60}{space 4}-.0247075{col 73}{space 3}-.0058603
+{txt}{space 15}SES {c |}{col 20}{res}{space 2}-.1339293{col 32}{space 2} .0076859{col 43}{space 1}  -17.43{col 52}{space 3}0.000{col 60}{space 4}-.1489934{col 73}{space 3}-.1188651
+{txt}{space 4}LE8_TOTALSCORE {c |}{col 20}{res}{space 2}-.0022675{col 32}{space 2} .0000546{col 43}{space 1}  -41.52{col 52}{space 3}0.000{col 60}{space 4}-.0023746{col 73}{space 3}-.0021605
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-.2317653{col 32}{space 2} .0706347{col 43}{space 1}   -3.28{col 52}{space 3}0.001{col 60}{space 4}-.3702068{col 73}{space 3}-.0933237
+{txt}{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}sigma2             {txt}{c |}
+{space 13}_cons {c |}{col 20}{res}{space 2} .8674567{col 32}{space 2} .0066693{col 43}{space 1}  130.07{col 52}{space 3}0.000{col 60}{space 4} .8543851{col 73}{space 3} .8805282
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+
+{txt}-> 4-way decomposition: delta method
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      z{col 46}   P>|z|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}tereri {c |}{col 14}{res}{space 2} .2002297{col 26}{space 2} .0876438{col 37}{space 1}    2.28{col 46}{space 3}0.022{col 54}{space 4} .0284511{col 67}{space 3} .3720083
+{txt}{space 3}ereri_cde {c |}{col 14}{res}{space 2} .1789029{col 26}{space 2}  .089292{col 37}{space 1}    2.00{col 46}{space 3}0.045{col 54}{space 4} .0038939{col 67}{space 3}  .353912
+{txt}ereri_intref {c |}{col 14}{res}{space 2}-.0010373{col 26}{space 2} .0055268{col 37}{space 1}   -0.19{col 46}{space 3}0.851{col 54}{space 4}-.0118696{col 67}{space 3}  .009795
+{txt}ereri_intmed {c |}{col 14}{res}{space 2} .0005585{col 26}{space 2} .0107896{col 37}{space 1}    0.05{col 46}{space 3}0.959{col 54}{space 4}-.0205887{col 67}{space 3} .0217057
+{txt}{space 3}ereri_pie {c |}{col 14}{res}{space 2} .0218055{col 26}{space 2} .0067839{col 37}{space 1}    3.21{col 46}{space 3}0.001{col 54}{space 4} .0085093{col 67}{space 3} .0351018
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{p 3 3 5 0}
+tereri=total excess relative risk; ereri_cde=excess relative risk due to controlled direct effect; ereri_intref=excess relative risk due to reference interaction; ereri_intmed=excess relative risk due to mediated interaction; ereri_pie=excess relative risk due to pure indirect effect.
+{p_end}
+{res}{err}Warning: this analysis assumes a rare outcome.
+Warning: fixed values for the covariates AGE SEX NonWhite householdsize SES LE8_TOTALSCORE were not provided. All covariates are fixed at their respective mean.
+
+{txt}-> Summary
+
+{col 4}Outcome    (yvar):{col 24}{res}Age_dementia
+{col 4}{txt}Exposure   (avar):{col 24}{res}poororalhealth_sev
+{col 4}{txt}Mediator   (mvar):{col 24}{res}mediator1
+{col 4}{txt}Covariates (cvars):{col 24}{res}AGE SEX NonWhite householdsize SES LE8_TOTALSCORE
+
+{col 4}{txt}Model for the outcome  (yreg):{col 35}{res}cox
+{col 4}{txt}Model for the mediator (mreg):{col 35}{res}linear
+
+{col 4}{txt}Referent exposure level (a0):{col 46}{res}0
+{col 4}{txt}Actual exposure level   (a1):{col 46}{res}1
+{col 4}{txt}Mediator level for the decomposition (m):{col 46}{res}0
+{col 4}{txt}Fixed values of the covariates (c):{col 46}{res}61.01 1 .04549 2.291 -.01259 492.6
+
+
+{txt}-> Model for the outcome
+
+{col 10}Failure {bf:_d}: {res}dem_diag==1
+{col 4}{txt}Analysis time {bf:_t}: {res}Age_dementia
+{col 3}{txt}Enter on or after: {res}time AGE
+{col 9}{txt}ID variable: {res}n_eid
+
+{txt}note: {bf:SEX} omitted because of collinearity.
+Iteration 0:  Log likelihood = {res}-4249.2065
+{txt}Iteration 1:  Log likelihood = {res}-4221.6339
+{txt}Iteration 2:  Log likelihood = {res}-4221.4574
+{txt}Iteration 3:  Log likelihood = {res}-4221.4574
+{txt}Refining estimates:
+Iteration 0:  Log likelihood = {res}-4221.4574
+
+{txt}Cox regression with Breslow method for ties
+
+No. of subjects = {res}{ralign 11:15,850}{col 57}{txt}{lalign 13:Number of obs} = {res}{ralign 6:15,850}
+{txt}No. of failures = {res}{ralign 11:496}
+{txt}Time at risk    = {res}{ralign 11:189,707.763}
+{col 57}{txt}{lalign 13:LR chi2({res:8})} = {res}{ralign 6:55.50}
+{txt}Log likelihood = {res}-4221.4574{col 57}{txt}{lalign 13:Prob > chi2} = {res}{ralign 6:0.0000}
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                         _t{col 29}{c |} Haz. ratio{col 41}   Std. err.{col 53}      z{col 61}   P>|z|{col 69}     [95% con{col 82}f. interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}poororalhealth_sev {c |}{col 29}{res}{space 2} 1.135088{col 41}{space 2} .1188952{col 52}{space 1}    1.21{col 61}{space 3}0.226{col 69}{space 4} .9244217{col 82}{space 3} 1.393763
+{txt}{space 18}mediator1 {c |}{col 29}{res}{space 2} 1.207697{col 41}{space 2} .0629236{col 52}{space 1}    3.62{col 61}{space 3}0.000{col 69}{space 4} 1.090457{col 82}{space 3} 1.337542
+{txt}_poororalhealXmediator1_000 {c |}{col 29}{res}{space 2} .8392072{col 41}{space 2} .0746846{col 52}{space 1}   -1.97{col 61}{space 3}0.049{col 69}{space 4} .7048832{col 82}{space 3} .9991283
+{txt}{space 24}AGE {c |}{col 29}{res}{space 2} 1.045878{col 41}{space 2}  .018784{col 52}{space 1}    2.50{col 61}{space 3}0.013{col 69}{space 4} 1.009703{col 82}{space 3}  1.08335
+{txt}{space 24}SEX {c |}{col 29}{res}{space 2}        1{col 41}{txt}  (omitted)
+{space 19}NonWhite {c |}{col 29}{res}{space 2} 1.028776{col 41}{space 2} .2503376{col 52}{space 1}    0.12{col 61}{space 3}0.907{col 69}{space 4} .6385473{col 82}{space 3} 1.657479
+{txt}{space 14}householdsize {c |}{col 29}{res}{space 2}   .90607{col 41}{space 2} .0553279{col 52}{space 1}   -1.62{col 61}{space 3}0.106{col 69}{space 4} .8038673{col 82}{space 3} 1.021267
+{txt}{space 24}SES {c |}{col 29}{res}{space 2} .7787329{col 41}{space 2} .0520102{col 52}{space 1}   -3.74{col 61}{space 3}0.000{col 69}{space 4} .6831849{col 82}{space 3} .8876439
+{txt}{space 13}LE8_TOTALSCORE {c |}{col 29}{res}{space 2} .9993421{col 41}{space 2} .0005138{col 52}{space 1}   -1.28{col 61}{space 3}0.201{col 69}{space 4} .9983355{col 82}{space 3}  1.00035
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+
+-> Model for the mediator
+{res}{txt}note: {bf:SEX} omitted because of collinearity.
+{res}
+{txt}Iteration 0:{space 2}Log likelihood = {res:-21755.663}  
+Iteration 1:{space 2}Log likelihood = {res:-21755.663}  
+{res}
+{txt}{col 1}Linear regression (Maximum Likelihood){col 56}{lalign 13:Number of obs}{col 69} = {res}{ralign 7:15,850}
+{txt}{col 56}{lalign 13:Wald chi2({res:6})}{col 69} = {res}{ralign 7:1771.35}
+{txt}{col 1}{lalign 14:Log likelihood}{col 15} = {res}{ralign 10:-21755.663}{txt}{col 56}{lalign 13:Prob > chi2}{col 69} = {res}{ralign 7:0.0000}
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         mediator1{col 20}{c |} Coefficient{col 32}  Std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}mu                 {txt}{c |}
+poororalhealth_sev {c |}{col 20}{res}{space 2} .1347532{col 32}{space 2} .0184106{col 43}{space 1}    7.32{col 52}{space 3}0.000{col 60}{space 4}  .098669{col 73}{space 3} .1708374
+{txt}{space 15}AGE {c |}{col 20}{res}{space 2} .0277982{col 32}{space 2} .0014588{col 43}{space 1}   19.06{col 52}{space 3}0.000{col 60}{space 4}  .024939{col 73}{space 3} .0306574
+{txt}{space 15}SEX {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 10}NonWhite {c |}{col 20}{res}{space 2}-.1207639{col 32}{space 2} .0372319{col 43}{space 1}   -3.24{col 52}{space 3}0.001{col 60}{space 4}-.1937371{col 73}{space 3}-.0477907
+{txt}{space 5}householdsize {c |}{col 20}{res}{space 2}-.0139979{col 32}{space 2} .0075308{col 43}{space 1}   -1.86{col 52}{space 3}0.063{col 60}{space 4}-.0287579{col 73}{space 3} .0007621
+{txt}{space 15}SES {c |}{col 20}{res}{space 2}-.1353113{col 32}{space 2} .0111357{col 43}{space 1}  -12.15{col 52}{space 3}0.000{col 60}{space 4}-.1571368{col 73}{space 3}-.1134857
+{txt}{space 4}LE8_TOTALSCORE {c |}{col 20}{res}{space 2}-.0022824{col 32}{space 2} .0000835{col 43}{space 1}  -27.34{col 52}{space 3}0.000{col 60}{space 4} -.002446{col 73}{space 3}-.0021188
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-.4174697{col 32}{space 2} .1003191{col 43}{space 1}   -4.16{col 52}{space 3}0.000{col 60}{space 4}-.6140915{col 73}{space 3}-.2208479
+{txt}{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}sigma2             {txt}{c |}
+{space 13}_cons {c |}{col 20}{res}{space 2} .9114824{col 32}{space 2} .0102388{col 43}{space 1}   89.02{col 52}{space 3}0.000{col 60}{space 4} .8914147{col 73}{space 3}   .93155
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+
+{txt}-> 4-way decomposition: delta method
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      z{col 46}   P>|z|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}tereri {c |}{col 14}{res}{space 2} .0959384{col 26}{space 2} .1076893{col 37}{space 1}    0.89{col 46}{space 3}0.373{col 54}{space 4}-.1151289{col 67}{space 3} .3070056
+{txt}{space 3}ereri_cde {c |}{col 14}{res}{space 2} .1299759{col 26}{space 2} .1139582{col 37}{space 1}    1.14{col 46}{space 3}0.254{col 54}{space 4}-.0933782{col 67}{space 3} .3533299
+{txt}ereri_intref {c |}{col 14}{res}{space 2}-.0360172{col 26}{space 2} .0177276{col 37}{space 1}   -2.03{col 46}{space 3}0.042{col 54}{space 4}-.0707627{col 67}{space 3}-.0012717
+{txt}ereri_intmed {c |}{col 14}{res}{space 2}-.0237763{col 26}{space 2} .0132448{col 37}{space 1}   -1.80{col 46}{space 3}0.073{col 54}{space 4}-.0497356{col 67}{space 3} .0021829
+{txt}{space 3}ereri_pie {c |}{col 14}{res}{space 2}  .025756{col 26}{space 2} .0080353{col 37}{space 1}    3.21{col 46}{space 3}0.001{col 54}{space 4} .0100071{col 67}{space 3}  .041505
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{p 3 3 5 0}
+tereri=total excess relative risk; ereri_cde=excess relative risk due to controlled direct effect; ereri_intref=excess relative risk due to reference interaction; ereri_intmed=excess relative risk due to mediated interaction; ereri_pie=excess relative risk due to pure indirect effect.
+{p_end}
+{res}{err}Warning: this analysis assumes a rare outcome.
+Warning: fixed values for the covariates AGE SEX NonWhite householdsize SES LE8_TOTALSCORE were not provided. All covariates are fixed at their respective mean.
+
+{txt}-> Summary
+
+{col 4}Outcome    (yvar):{col 24}{res}Age_dementia
+{col 4}{txt}Exposure   (avar):{col 24}{res}poororalhealth_sev
+{col 4}{txt}Mediator   (mvar):{col 24}{res}mediator1
+{col 4}{txt}Covariates (cvars):{col 24}{res}AGE SEX NonWhite householdsize SES LE8_TOTALSCORE
+
+{col 4}{txt}Model for the outcome  (yreg):{col 35}{res}cox
+{col 4}{txt}Model for the mediator (mreg):{col 35}{res}linear
+
+{col 4}{txt}Referent exposure level (a0):{col 46}{res}0
+{col 4}{txt}Actual exposure level   (a1):{col 46}{res}1
+{col 4}{txt}Mediator level for the decomposition (m):{col 46}{res}0
+{col 4}{txt}Fixed values of the covariates (c):{col 46}{res}60.38 2 .04721 2.152 -.04881 507.7
+
+
+{txt}-> Model for the outcome
+
+{col 10}Failure {bf:_d}: {res}dem_diag==1
+{col 4}{txt}Analysis time {bf:_t}: {res}Age_dementia
+{col 3}{txt}Enter on or after: {res}time AGE
+{col 9}{txt}ID variable: {res}n_eid
+
+{txt}note: {bf:SEX} omitted because of collinearity.
+Iteration 0:  Log likelihood = {res}-3560.5587
+{txt}Iteration 1:  Log likelihood = {res}-3542.5823
+{txt}Iteration 2:  Log likelihood = {res}-3539.6685
+{txt}Iteration 3:  Log likelihood = {res}-3539.6061
+{txt}Iteration 4:  Log likelihood = {res} -3539.606
+{txt}Refining estimates:
+Iteration 0:  Log likelihood = {res} -3539.606
+
+{txt}Cox regression with Breslow method for ties
+
+No. of subjects = {res}{ralign 11:17,985}{col 57}{txt}{lalign 13:Number of obs} = {res}{ralign 6:17,985}
+{txt}No. of failures = {res}{ralign 11:413}
+{txt}Time at risk    = {res}{ralign 11:221,438.471}
+{col 57}{txt}{lalign 13:LR chi2({res:8})} = {res}{ralign 6:41.91}
+{txt}Log likelihood = {res}-3539.606{col 57}{txt}{lalign 13:Prob > chi2} = {res}{ralign 6:0.0000}
+
+{txt}{hline 28}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                         _t{col 29}{c |} Haz. ratio{col 41}   Std. err.{col 53}      z{col 61}   P>|z|{col 69}     [95% con{col 82}f. interval]
+{hline 28}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}poororalhealth_sev {c |}{col 29}{res}{space 2} 1.273903{col 41}{space 2} .1421183{col 52}{space 1}    2.17{col 61}{space 3}0.030{col 69}{space 4} 1.023705{col 82}{space 3} 1.585249
+{txt}{space 18}mediator1 {c |}{col 29}{res}{space 2} 1.054951{col 41}{space 2} .0725459{col 52}{space 1}    0.78{col 61}{space 3}0.437{col 69}{space 4} .9219294{col 82}{space 3} 1.207166
+{txt}_poororalhealXmediator1_000 {c |}{col 29}{res}{space 2}  1.21001{col 41}{space 2} .1163322{col 52}{space 1}    1.98{col 61}{space 3}0.047{col 69}{space 4} 1.002197{col 82}{space 3} 1.460915
+{txt}{space 24}AGE {c |}{col 29}{res}{space 2} 1.020767{col 41}{space 2} .0199075{col 52}{space 1}    1.05{col 61}{space 3}0.292{col 69}{space 4} .9824853{col 82}{space 3}  1.06054
+{txt}{space 24}SEX {c |}{col 29}{res}{space 2}        1{col 41}{txt}  (omitted)
+{space 19}NonWhite {c |}{col 29}{res}{space 2} 1.101062{col 41}{space 2} .2945003{col 52}{space 1}    0.36{col 61}{space 3}0.719{col 69}{space 4} .6518411{col 82}{space 3} 1.859868
+{txt}{space 14}householdsize {c |}{col 29}{res}{space 2} .9597031{col 41}{space 2} .0575222{col 52}{space 1}   -0.69{col 61}{space 3}0.493{col 69}{space 4} .8533319{col 82}{space 3} 1.079334
+{txt}{space 24}SES {c |}{col 29}{res}{space 2} .8850525{col 41}{space 2} .0700999{col 52}{space 1}   -1.54{col 61}{space 3}0.123{col 69}{space 4} .7577924{col 82}{space 3} 1.033684
+{txt}{space 13}LE8_TOTALSCORE {c |}{col 29}{res}{space 2} .9989873{col 41}{space 2} .0005486{col 52}{space 1}   -1.85{col 61}{space 3}0.065{col 69}{space 4} .9979128{col 82}{space 3} 1.000063
+{txt}{hline 28}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+
+-> Model for the mediator
+{res}{txt}note: {bf:SEX} omitted because of collinearity.
+{res}
+{txt}Iteration 0:{space 2}Log likelihood = {res:-23827.876}  
+Iteration 1:{space 2}Log likelihood = {res:-23827.876}  
+{res}
+{txt}{col 1}Linear regression (Maximum Likelihood){col 56}{lalign 13:Number of obs}{col 69} = {res}{ralign 7:17,985}
+{txt}{col 56}{lalign 13:Wald chi2({res:6})}{col 69} = {res}{ralign 7:2646.80}
+{txt}{col 1}{lalign 14:Log likelihood}{col 15} = {res}{ralign 10:-23827.876}{txt}{col 56}{lalign 13:Prob > chi2}{col 69} = {res}{ralign 7:0.0000}
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         mediator1{col 20}{c |} Coefficient{col 32}  Std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}mu                 {txt}{c |}
+poororalhealth_sev {c |}{col 20}{res}{space 2} .1693669{col 32}{space 2} .0173029{col 43}{space 1}    9.79{col 52}{space 3}0.000{col 60}{space 4} .1354539{col 73}{space 3} .2032799
+{txt}{space 15}AGE {c |}{col 20}{res}{space 2} .0290534{col 32}{space 2} .0013254{col 43}{space 1}   21.92{col 52}{space 3}0.000{col 60}{space 4} .0264557{col 73}{space 3} .0316511
+{txt}{space 15}SEX {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 10}NonWhite {c |}{col 20}{res}{space 2}-.1302175{col 32}{space 2} .0326336{col 43}{space 1}   -3.99{col 52}{space 3}0.000{col 60}{space 4}-.1941781{col 73}{space 3}-.0662568
+{txt}{space 5}householdsize {c |}{col 20}{res}{space 2}-.0161202{col 32}{space 2} .0062199{col 43}{space 1}   -2.59{col 52}{space 3}0.010{col 60}{space 4}-.0283108{col 73}{space 3}-.0039295
+{txt}{space 15}SES {c |}{col 20}{res}{space 2}-.1327981{col 32}{space 2} .0106431{col 43}{space 1}  -12.48{col 52}{space 3}0.000{col 60}{space 4}-.1536582{col 73}{space 3}-.1119379
+{txt}{space 4}LE8_TOTALSCORE {c |}{col 20}{res}{space 2}-.0022476{col 32}{space 2} .0000723{col 43}{space 1}  -31.09{col 52}{space 3}0.000{col 60}{space 4}-.0023893{col 73}{space 3}-.0021059
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}-.7479793{col 32}{space 2} .0932255{col 43}{space 1}   -8.02{col 52}{space 3}0.000{col 60}{space 4}-.9306979{col 73}{space 3}-.5652607
+{txt}{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}sigma2             {txt}{c |}
+{space 13}_cons {c |}{col 20}{res}{space 2} .8285094{col 32}{space 2} .0087369{col 43}{space 1}   94.83{col 52}{space 3}0.000{col 60}{space 4} .8113854{col 73}{space 3} .8456334
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+
+{txt}-> 4-way decomposition: delta method
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      z{col 46}   P>|z|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}tereri {c |}{col 14}{res}{space 2} .3160918{col 26}{space 2} .1440127{col 37}{space 1}    2.19{col 46}{space 3}0.028{col 54}{space 4}  .033832{col 67}{space 3} .5983516
+{txt}{space 3}ereri_cde {c |}{col 14}{res}{space 2} .2760666{col 26}{space 2} .1434258{col 37}{space 1}    1.92{col 46}{space 3}0.054{col 54}{space 4}-.0050427{col 67}{space 3}  .557176
+{txt}ereri_intref {c |}{col 14}{res}{space 2}-.0132809{col 26}{space 2} .0096591{col 37}{space 1}   -1.37{col 46}{space 3}0.169{col 54}{space 4}-.0322124{col 67}{space 3} .0056506
+{txt}ereri_intmed {c |}{col 14}{res}{space 2} .0442047{col 26}{space 2} .0188278{col 37}{space 1}    2.35{col 46}{space 3}0.019{col 54}{space 4}  .007303{col 67}{space 3} .0811064
+{txt}{space 3}ereri_pie {c |}{col 14}{res}{space 2} .0091014{col 26}{space 2} .0117899{col 37}{space 1}    0.77{col 46}{space 3}0.440{col 54}{space 4}-.0140065{col 67}{space 3} .0322092
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{p 3 3 5 0}
+tereri=total excess relative risk; ereri_cde=excess relative risk due to controlled direct effect; ereri_intref=excess relative risk due to reference interaction; ereri_intmed=excess relative risk due to mediated interaction; ereri_pie=excess relative risk due to pure indirect effect.
+{p_end}
+
+{com}. save, replace
+{txt}{p 0 4 2}
+file {bf}
+E:\16GBBACKUPUSB\BACKUP_USB_SEPTEMBER2014\May Baydoun_folder\UK_BIOBANK_PROJECT\UKB_PAPER8B_PERIONDONTALDISEASE_OLINK_DEM\DATA\finaldata_unimputedfin.dta{rm}
+saved
+{p_end}
+
+{com}. 
+. 
+. capture log close
+{smcl}
+{com}{sf}{ul off}

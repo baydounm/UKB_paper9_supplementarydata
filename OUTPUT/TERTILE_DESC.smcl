@@ -1,0 +1,69 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. 
+. use "E:\16GBBACKUPUSB\BACKUP_USB_SEPTEMBER2014\May Baydoun_folder\UK_BIOBANK_PROJECT\UKB_PAPER8B_PERIONDONTALDISEASE_OLINK_DEM\DATA\finaldata_unimputedfin",clear
+{txt}
+{com}. 
+. 
+. bysort LE8_TOTALSCOREtert: su LE8_TOTALSCORE if sample_final==1, det
+
+{txt}{hline}
+-> LE8_TOTALSCOREtert = 1
+
+                       LE8_TOTALSCORE
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 228.5714       68.57143
+{txt} 5%    {res}      290       114.2857
+{txt}10%    {res}      320            120       {txt}Obs         {res}     12,549
+{txt}25%    {res}      365            125       {txt}Sum of wgt. {res}     12,549
+
+{txt}50%    {res}      410                      {txt}Mean          {res} 395.5005
+                        {txt}Largest       Std. dev.     {res} 54.22384
+{txt}75%    {res}      440            460
+{txt}90%    {res}      455            460       {txt}Variance      {res} 2940.224
+{txt}95%    {res} 457.1429            460       {txt}Skewness      {res}-1.177583
+{txt}99%    {res}      460            460       {txt}Kurtosis      {res}   4.3776
+
+{txt}{hline}
+-> LE8_TOTALSCOREtert = 2
+
+                       LE8_TOTALSCORE
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}      465          462.5
+{txt} 5%    {res}      465          462.5
+{txt}10%    {res}      470       462.8571       {txt}Obs         {res}     12,756
+{txt}25%    {res}      485       462.8571       {txt}Sum of wgt. {res}     12,756
+
+{txt}50%    {res}      505                      {txt}Mean          {res} 505.0214
+                        {txt}Largest       Std. dev.     {res} 24.04597
+{txt}75%    {res}      525            545
+{txt}90%    {res}      540            545       {txt}Variance      {res} 578.2087
+{txt}95%    {res} 542.8571            545       {txt}Skewness      {res}-.0219979
+{txt}99%    {res}      545            545       {txt}Kurtosis      {res} 1.827219
+
+{txt}{hline}
+-> LE8_TOTALSCOREtert = 3
+
+                       LE8_TOTALSCORE
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 548.5714       545.7143
+{txt} 5%    {res}      550       545.7143
+{txt}10%    {res}      555       545.7143       {txt}Obs         {res}     11,964
+{txt}25%    {res}      570       546.6667       {txt}Sum of wgt. {res}     11,964
+
+{txt}50%    {res}      595                      {txt}Mean          {res} 605.7758
+                        {txt}Largest       Std. dev.     {res} 45.33512
+{txt}75%    {res} 634.2857            800
+{txt}90%    {res}      670            800       {txt}Variance      {res} 2055.273
+{txt}95%    {res}      695            800       {txt}Skewness      {res} .9825926
+{txt}99%    {res}      740            800       {txt}Kurtosis      {res} 3.613069
+
+{txt}
+{com}. 
+. 
+. capture log close
+{smcl}
+{com}{sf}{ul off}

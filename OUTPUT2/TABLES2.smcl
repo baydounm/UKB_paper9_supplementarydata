@@ -1,0 +1,73 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. 
+. 
+. use "E:\16GBBACKUPUSB\BACKUP_USB_SEPTEMBER2014\May Baydoun_folder\UK_BIOBANK_PROJECT\UKB_PAPER8B_PERIONDONTALDISEASE_OLINK_DEM\DATA\finaldata_unimputedFINAL_SENS",clear
+{txt}
+{com}. 
+. 
+. 
+. 
+. *************************************************STSET FOR DEMENTIA**********************************
+. stset Age_dementia, failure(dem_diag==1) enter(AGE) id(n_eid) scale(1)
+
+{txt}Survival-time data settings
+
+{col 12}ID variable: {res}n_eid
+{col 10}{txt}Failure event: {res}dem_diag==1
+{col 1}{txt}Observed time interval: {res}(Age_dementia[_n-1], Age_dementia]
+{col 6}{txt}Enter on or after: {res}time AGE
+{col 6}{txt}Exit on or before: {res}failure
+
+{txt}{hline 74}
+{res}     37,269{txt}  total observations
+{res}          0{txt}  exclusions
+{hline 74}
+{res}     37,269{txt}  observations remaining, representing
+{res}     37,269{txt}  subjects
+{res}        988{txt}  failures in single-failure-per-subject data
+{res} 452,684.95{txt}  total analysis time at risk and under observation
+                                                At risk from t = {res}        0
+                                     {txt}Earliest observed entry t = {res} 50.00137
+                                          {txt}Last observed exit t = {res} 84.54757
+{txt}
+{com}. 
+. 
+. stcox poororalhealth_sev AGE SEX NonWhite householdsize SES LE8_TOTALSCORE if sample_final2==1
+
+{col 10}{txt}Failure {bf:_d}: {res}dem_diag==1
+{col 4}{txt}Analysis time {bf:_t}: {res}Age_dementia
+{col 3}{txt}Enter on or after: {res}time AGE
+{col 9}{txt}ID variable: {res}n_eid
+
+{txt}Iteration 0:  Log likelihood = {res}-8767.2464
+{txt}Iteration 1:  Log likelihood = {res}-8735.6898
+{txt}Iteration 2:  Log likelihood = {res}-8735.5346
+{txt}Iteration 3:  Log likelihood = {res}-8735.5344
+{txt}Refining estimates:
+Iteration 0:  Log likelihood = {res}-8735.5344
+
+{txt}Cox regression with Breslow method for ties
+
+No. of subjects = {res}{ralign 11:36,745}{col 57}{txt}{lalign 13:Number of obs} = {res}{ralign 6:36,745}
+{txt}No. of failures = {res}{ralign 11:937}
+{txt}Time at risk    = {res}{ralign 11:451,756.098}
+{col 57}{txt}{lalign 13:LR chi2({res:7})} = {res}{ralign 6:63.42}
+{txt}Log likelihood = {res}-8735.5344{col 57}{txt}{lalign 13:Prob > chi2} = {res}{ralign 6:0.0000}
+
+{txt}{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                _t{col 20}{c |} Haz. ratio{col 32}   Std. err.{col 44}      z{col 52}   P>|z|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+poororalhealth_sev {c |}{col 20}{res}{space 2} 1.181418{col 32}{space 2}  .083449{col 43}{space 1}    2.36{col 52}{space 3}0.018{col 60}{space 4} 1.028678{col 73}{space 3} 1.356838
+{txt}{space 15}AGE {c |}{col 20}{res}{space 2} 1.007493{col 32}{space 2} .0131488{col 43}{space 1}    0.57{col 52}{space 3}0.567{col 60}{space 4} .9820489{col 73}{space 3} 1.033597
+{txt}{space 15}SEX {c |}{col 20}{res}{space 2} .7660083{col 32}{space 2} .0507072{col 43}{space 1}   -4.03{col 52}{space 3}0.000{col 60}{space 4} .6728011{col 73}{space 3}  .872128
+{txt}{space 10}NonWhite {c |}{col 20}{res}{space 2} 1.079568{col 32}{space 2} .1886981{col 43}{space 1}    0.44{col 52}{space 3}0.661{col 60}{space 4} .7664218{col 73}{space 3} 1.520659
+{txt}{space 5}householdsize {c |}{col 20}{res}{space 2}  .933113{col 32}{space 2} .0405715{col 43}{space 1}   -1.59{col 52}{space 3}0.111{col 60}{space 4} .8568884{col 73}{space 3} 1.016118
+{txt}{space 15}SES {c |}{col 20}{res}{space 2} .8210356{col 32}{space 2} .0413175{col 43}{space 1}   -3.92{col 52}{space 3}0.000{col 60}{space 4} .7439204{col 73}{space 3} .9061446
+{txt}{space 4}LE8_TOTALSCORE {c |}{col 20}{res}{space 2} .9989378{col 32}{space 2} .0003624{col 43}{space 1}   -2.93{col 52}{space 3}0.003{col 60}{space 4} .9982278{col 73}{space 3} .9996483
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+. capture log close
+{smcl}
+{com}{sf}{ul off}
