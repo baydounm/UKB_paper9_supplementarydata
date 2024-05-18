@@ -8,4 +8,4 @@ a Laboratory of Epidemiology and Population Sciences, National Institute on Agin
 b Stanford Center for Longevity, Stanford University, Palo Alto, CA 94305
 
 
-Currently under review in Molecular Psychiatry. 
+Currently accepted in Geroscience. 
